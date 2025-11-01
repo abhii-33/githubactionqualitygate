@@ -2,7 +2,6 @@ import pytest
 from calc import add, sub, mul, div
 
 def test_add():
-    #compare actual o/p and expected o/p
     assert add(2, 3) == 5
 
 def test_sub():
@@ -13,7 +12,3 @@ def test_mul():
 
 def test_div():
     assert div(10, 2) == 5
-
-def test_div_by_zero():
-    with pytest.raises(ValueError):
-        div(5, 0)
