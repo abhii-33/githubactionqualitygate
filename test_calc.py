@@ -12,3 +12,7 @@ def test_mul():
 
 def test_div():
     assert div(10, 2) == 5
+
+def test_div_by_zero():
+    with pytest.raises(ValueError):
+        div(5, 0)
